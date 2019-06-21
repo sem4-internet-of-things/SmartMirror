@@ -118,8 +118,9 @@ venv.bak/
 
 # mkdocs documentation
 /site
-/python-scripts\handPoseDetection\imgs
-/python-scripts\handPoseDetection\hand
+python-scripts/handPoseDetection/imgs/
+python-scripts/handPoseDetection/hand/
+python-scripts/handPoseDetection/audio/
 
 # mypy
 .mypy_cache/
