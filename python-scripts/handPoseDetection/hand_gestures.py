@@ -9,13 +9,13 @@ from playsound import playsound
 def finger_counter(x,y):
     res="An error has occured"
     if (x[4] > x[3]) and (y[8] < y[7]) and (y[12] < y[11]) and (y[16] < y[15]) and ( y[20] < y[19]):
-        playsound('imperial_march.wav')
+        playsound('audio/imperial_march.wav')
         res="Five fingers detected"
     elif (x[4] < x[3]) and (y[8] < y[7]) and (y[12] < y[11]) and (y[16] < y[15]) and ( y[20] < y[19]):
         playsound('Aaron_Smith_-_Dancin_KRONO_Remix')
         res="Four fingers detected"
     elif (x[4] > x[3]) and (y[8] < y[7]) and (y[12] < y[11]) and (y[16] > y[15]) and ( y[20] > y[19]):
-        playsound('song3.mp3')
+        playsound('audio/song3.mp3')
         res="Three fingers detected"
     elif (x[4] < x[3]) and (y[8] < y[7]) and (y[12] < y[11]) and (y[16] > y[15]) and ( y[20] > y[19]):
         playsound('Aaron_Smith_-_Dancin_KRONO_Remix')
