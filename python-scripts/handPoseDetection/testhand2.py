@@ -121,11 +121,10 @@ def hand_pose(image):
 
         xs, ys = coords_handler(points)
 
-        #cv.imshow('OpenPose using OpenCV', frame)
         print(hand_gestures.finger_counter(xs, ys))
-        #print("Total time taken : {:.3f}".format(time.time() - time_now))
+        print("Total time taken : {:.3f}".format(time.time() - time_now))
 
-        #print('x[4]:',  xs[4],"x[3]: ",xs[3],"y[8]: ",ys[8],"y[7]: ",ys[7],"y[12]: ",ys[12],"y[11]: ",ys[11],"y[16]: ",ys[16],"y[15]: ",ys[15],"y[20]: ",ys[20],"y[19]: ",ys[19])
+        break
 
 
 hand_pose(cap_screen.cap_screen())

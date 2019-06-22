@@ -1,8 +1,9 @@
 import time
 import os
-import cv2
+import cv2 as cv
 
-cap = cv2.VideoCapture(0)
+cap = cv.VideoCapture(1)
+
 
 def cap_screen():
 
@@ -24,10 +25,10 @@ def cap_screen():
         os.makedirs('imgs')
 
     img_name = "imgs/hand.jpg"
-    cv2.imwrite(img_name, frame)
+    cv.imwrite(img_name, frame)
 
     return img_name
 
+
 if __name__ == "__main__":
     cap_screen()
-    
